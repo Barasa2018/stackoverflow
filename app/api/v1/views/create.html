@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Post question</title>
+<style>
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+  }
+  li{
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #ddd;
+  }
+  
+  li a.active {
+    color: white;
+    background-color: rgb(81, 85, 85);
+  }
+  .footer {
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     margin-left:10px;
+     margin-right:10px;
+     padding:0;
+     background-color: rgba(219, 219, 212, 0.986);
+     color: rgb(5, 7, 116);
+     text-align: center;
+  }
+  .wrapper{
+    margin-top: 50px;
+    margin-right: 200px;
+    margin-left: 200px;
+    border:1px solid rgb(245, 245, 244);
+    border-radius: 20px;
+    background-color: rgb(241, 243, 233);
+    padding-top: 30px;
+    padding-left: 200px;
+  }
+  .title{
+    text-justify: inherit;
+  }
+  .field{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  li .right{
+    text-align: right;
+  }
+  a{
+    text-decoration: none;
+  }
+  .button{
+    min-width:100px;
+    height:30px;
+    border-radius: 5px;
+    text-align: center;
+    background-color:rgb(33, 90, 245);
+    color:white;
+    cursor: pointer;
+  
+  }
+  .input{
+    min-width: 470px;
+    text-emphasis: bold;
+}
+</style>
+
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="index.html">Stackoverflow-lite</a></li>
+  <li><a href="../index.html">Home</a></li>
+  <li style="float:right;"><a href="signup.html">Sign up</a></li>
+  <li style="float:right;"><a href="login.html">Log in</a></li>
+</ul>
+<form>
+  <div class="wrapper">
+    <div class="title">
+      <h1 >Question</h1>
+      </div>
+        <div class="field">
+            <input type="text" class="input" name="title" placeholder="Title">
+        </div>
+
+        <div class="field">
+
+                <textarea rows="7" cols="57">Your question....</textarea>
+
+          </div>
+
+        <div class="field">
+            <button class="button">Post</button>
+        </div>
+
+      </form>
+        <footer class="footer">
+          <div class="container">
+            <div class="content has-text-centered">
+              <p>
+                <strong style="color:blue">Stackoverflow-lite 2018</strong> 
+              </p>
+
+            </div>
+          </div>
+        </div>
+        </footer>
+</body 
+</html>
