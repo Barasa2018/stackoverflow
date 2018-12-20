@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  li{
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #ddd;
+  }
+  
+  li a.active {
+    color: white;
+    background-color: rgb(81, 85, 85);
+  }
+  .content{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .footer {
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     height: 50px;
+     margin-left:10px;
+     margin-right:10px;
+     padding:0;
+     background-color: rgba(219, 219, 212, 0.986);
+     text-align: center;
+  }
+  .wrapper{
+    margin-top: 100px;
+    margin-right: 200px;
+    margin-left: 200px;
+    border:1px solid rgb(245, 245, 244);
+    border-radius: 20px;
+    background-color: rgb(241, 243, 233);
+    padding-top: 30px;
+    padding-left: 200px;
+  }
+  .title{
+    text-justify: inherit;
+  }
+  .field{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  li .right{
+    text-align: right;
+  }
+  a{
+    text-decoration: none;
+  }
+  .button{
+    min-width:100px;
+    height:30px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color:rgb(33, 90, 245);
+    color:white;
+    cursor: pointer;
+  
+  }
+  .input{
+    min-width: 300px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Create three unequal columns that floats next to each other */
+  .column {
+    float: left;
+    padding: 10px;
+    min-height: 600px;
+  }
+  
+  .left, .right {
+    width: 20%;
+  }
+  
+  .middle {
+    width: 60%;
+    border-right: 1px solid blue;
+    border-left: 1px solid blue;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  table{
+    width:100%;
+  }
+
+  td{
+    height:50px;
+  }
+  
+.ad{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width:200px;
+  height: 180px;
+  border: 1px groove blueviolet;
+  border-radius: 10px;
+  background-color: rgb(223, 226, 202);
+  color: rgb(26, 15, 182);
+  align-content: center;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Stackoverflow-lite</a></li>
+  <li><a href="index.html">Home</a></li>
+  <li style="float:right;"><a href="signup.html">Sign up</a></li>
+  <li style="float:right;"><a href="login.html">Log in</a></li>
+</ul>
+<div class="content">
+<div class="row">
+  <div class="column left" style="background-color:white;">
+    <h2>Home</h2>
+    <h4 style="font-weight: 900">Public</h4>
+      <p><a href="#">Users</a></p>
+      <p><a href="#">My Questions</a></p>
+      <p><a href="#">My profile</a></p>
+      <p><a href="#">Jobs</a></p>
+      <div class="ad">
+        <h1 style="text-align:center"> Adverts</h1>
+        <h3 style="text-align: center">Here !</h3>
+      </div>
+  </div>
+  <div class="column middle" style="background-color: aliceblue;">
+    
+    <h2>Top Questions <a href="question.html"><button class="button" style="float:right">Ask Question</button></a></h2>
+    
+<table>
+   <tr>
+        <td>Can you use flask to develop an api ?</td>
+        <td>80<button><i class="fa fa-thumbs-o-up"></i></button> </td> 
+        <td>0<button><i class="fa fa-thumbs-o-down"></i></button> </td> 
+        <td> <a href="#">10 <button> Answers </button> </a></td>
+  
+    </tr>
+    <tr>
+        <td>what does git clone do ?</td>
+        <td>18<button><i class="fa fa-thumbs-o-up"></i></button></td>
+        <td>0<button><i class="fa fa-thumbs-o-down"></i></button> </td> 
+        <td> <a href="#">23<button> Answers </button> </a></td>
+    </tr>
+    <tr>
+        <td>Can you use flask to develop an api ?</td>
+        <td>80<button><i class="fa fa-thumbs-o-up"></i></button> </td> 
+        <td>0<button><i class="fa fa-thumbs-o-down"></i></button> </td> 
+        <td> <a href="#">10 <button> Answers </button> </a></td>
+      
+     </tr>
+    <tr>
+        <td>what does git clone do ?</td>
+        <td>18<button><i class="fa fa-thumbs-o-up"></i></button></td>
+        <td>0<button><i class="fa fa-thumbs-o-down"></i></button> </td> 
+        <td> <a href="#">23<button> Answers </button> </a></td>
+    </tr>
+    <tr>
+        <td>Can you use flask to develop an api ?</td>
+        <td>80<button><i class="fa fa-thumbs-o-up"></i></button> </td> 
+        <td>0<button><i class="fa fa-thumbs-o-down"></i></button> </td> 
+        <td> <a href="#">10 <button> Answers </button> </a></td>
+          
+    </tr>
+        <tr>
+        <td>what does git clone do ?</td>
+        <td>18<button><i class="fa fa-thumbs-o-up"></i></button></td>
+        <td>0<button><i class="fa fa-thumbs-o-down"></i></button> </td> 
+        <td> <a href="#">23<button> Answers </button> </a></td>
+    </tr>
+    <tr>
+        <td>Can you use flask to develop an api ?</td>
+        <td>80<button><i class="fa fa-thumbs-o-up"></i></button> </td> 
+        <td>0<button><i class="fa fa-thumbs-o-down"></i></button> </td> 
+        <td> <a href="#">10 <button> Answers </button> </a></td>
+              
+    </tr>
+    <tr>
+        <td>what does git clone do ?</td>
+        <td>18<button><i class="fa fa-thumbs-o-up"></i></button></td>
+        <td>0<button><i class="fa fa-thumbs-o-down"></i></button> </td> 
+        <td> <a href="#">23<button> Answers </button> </a></td>
+    </tr>
+    <tr>
+        <td>Can you use flask to develop an api ?</td>
+        <td>80<button><i class="fa fa-thumbs-o-up"></i></button> </td> 
+        <td>0<button><i class="fa fa-thumbs-o-down"></i></button> </td> 
+        <td> <a href="#">10 <button> Answers </button> </a></td>
+                  
+    </tr>
+    <tr>
+        <td>what does git clone do ?</td>
+        <td>18<button><i class="fa fa-thumbs-o-up"></i></button></td>
+        <td>0<button><i class="fa fa-thumbs-o-down"></i></button> </td> 
+        <td> <a href="#">23<button> Answers </button> </a></td>
+    </tr>
+  
+
+</table>
+  </div>
+  <div class="column right" style="background-color: white;">
+    <div class="field">
+    <input type="search" placeholder=" "><a href="#"><button><i class="fa fa-search"></i></button> </a> 
+      <h2>Related Topics</h2>
+      <p><a href="#">HTML</a></p>
+      <p><a href="#">Javascript</a></p>
+      <p><a href="#">CSS</a></p>
+      <p><a href="#">PHP</a></p>
+      <p><a href="#">Python</a></p>
+      <p><a href="#">Flask</a></p>
+      <p><a href="#">Django</a></p>
+      <p><a href="#">Laravel</a></p>
+  </div>
+</div>
+</div>
+
+
+    </body>
+        <footer class="footer">
+          <div class="container">
+          
+              <p>
+                <small>Share with friends</small>  <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i> </a>  <a href="https://twitter.com/twitter"><i class="fa fa-twitter"></i></a> 
+        
+                <strong style="color:blue">Stackoverflow-lite 2018</strong> 
+              </p>
+            
+            
+          </div>
+        </div>
+        </footer>
+        
+    </body>
+</html>
