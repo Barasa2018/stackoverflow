@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  li{
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #ddd;
+  }
+  
+  li a.active {
+    color: white;
+    background-color: rgb(81, 85, 85);
+  }
+  .content{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .footer {
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     height: 50px;
+     margin-left:10px;
+     margin-right:10px;
+     padding:0;
+     background-color: rgba(219, 219, 212, 0.986);
+     text-align: center;
+  }
+  .wrapper{
+    margin-top: 100px;
+    margin-right: 200px;
+    margin-left: 200px;
+    border:1px solid rgb(245, 245, 244);
+    border-radius: 20px;
+    background-color: rgb(241, 243, 233);
+    padding-top: 30px;
+    padding-left: 200px;
+  }
+  .title{
+    text-justify: inherit;
+  }
+  .field{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  li .right{
+    text-align: right;
+  }
+  a{
+    text-decoration: none;
+  }
+  .button{
+    min-width:100px;
+    height:30px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color:rgb(33, 90, 245);
+    color:white;
+    cursor: pointer;
+  
+  }
+  .input{
+    min-width: 300px;
+  }
+</style>
+
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="index.html">Stackoverflow-lite</a></li>
+  <li><a href="index.html">Home</a></li>
+  <li style="float:right;"><a href="signup.html">Sign up</a></li>
+  <li style="float:right;"><a href="login.html">Log in</a></li>
+</ul>
+<form>
+  <div class="wrapper">
+    <div class="title">
+      <h1 >Login</h1>
+      </div>
+        <div class="field">
+          <label>Email
+          
+            <input type="email" class="input" style="width:320px">
+          </label>
+          
+        </div>
+        
+        <div class="field">
+            <label>Password
+                <input type="password" class="input">
+            </label> 
+        </div>
+        
+        <div class="field">
+            <label class="checkbox">
+              <input type="checkbox">
+              Remember me
+            </label>
+        </div>
+        
+        <div class="field">
+            <button class="button">Login</button>
+        </div>
+
+        <div class="field">
+           Dont have an Account ? <a href="signup"> Signup </a>
+        </div>
+       
+      </form>
+
+        <footer class="footer">
+          <div class="container">
+            
+              <p>
+                <strong style="color:blue">Stackoverflow-lite 2018</strong> 
+              </p>
+            
+          </div>
+        </div>
+        </footer>
+    </body>
+</html>
