@@ -8,7 +8,8 @@ app.config['DEBUG'] = True
 
 users = [{'name':'Barasa','email':'barasa@gmail.com'},
         {'name':'Joan','email':'joan@domain.com'},
-        {'name':'Ben','email':'ben@testmail.com'}]
+        {'name':'Ben','email':'ben@testmail.com'},
+        {'name':'Ken','email':'ken@yahoo.com'}]
 
 @app.route('/app/api/v1/users',methods=['GET'])
 def showUsers():
