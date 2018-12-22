@@ -13,4 +13,4 @@ users = [{'id':1,'name':'jackie','email':'jackie@mariba.com'},
 def showUsers():
     return jsonify(users)
 
-app.run
+app.run()
