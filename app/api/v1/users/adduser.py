@@ -1,16 +1,25 @@
 import flask
-from flask import request,jsonify,make_response
+from flask import request,jsonify,abort
 
 app = flask.Flask('__name__')
 app.config['DEBUG'] = True
 
-@app.route('/app/api/v1/users',methods=['POST'])
+users = [{'id':1,
+        'name':'jane',
+        'email':'jane@testmail.com'}]
+
+@app.route('/app/api/v1/users', methods=['post'])
 def addUser():
-    user = {'id':user[-1]['id']+1,
-            'title':request.json('title'),
-            'description':request.json.get('description')}
+    # user = ({'name': 'cornelius'});
+    # return jsonify(request.json), 200;
+    if not request.json:
+        abort(400)
+    user = {'id':users[-1]['id']+1,
+            'name':request.json['name'],
+            'email':request.json.get('email')
+            }
 
-    user.append(user)
-    return jsonify(user)
+    users.append(user)
+    return jsonify(users),201
 
-app.run
+app.run()
