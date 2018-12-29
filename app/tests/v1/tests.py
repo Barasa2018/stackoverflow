@@ -26,6 +26,10 @@ class TestApi(unittest.TestCase):
         response = self.app.get('/app/api/v1/questions')
         self.assertEqual(response.status_code,200)
 
+    def test_fetch_question(self):
+        response = self.app.get('/app/api/v1/questions/<int:id>')
+        self.assertEqual(response.status_code,200)
+
 
 if __name__ == '__main__':
     unittest.main()
