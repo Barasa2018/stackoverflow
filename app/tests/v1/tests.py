@@ -38,6 +38,11 @@ class TestApi(unittest.TestCase):
         response = self.app.get('/app/api/v1/users/<int:id>/questions')
         self.assertEqual(response.status_code,200)
 
+    def test_add_answer(self):
+        response = self.app.post('/app/api/v1/answers',
+                                data=json.dumps(dict(desription='to add inline CSS, use the following example:....')),
+                                content_type='application/json')
+
 
 if __name__ == '__main__':
     unittest.main()
