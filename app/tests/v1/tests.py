@@ -1,7 +1,10 @@
 import flask
-from flask import request,json
+import os
+from flask import request,json,Flask
 import unittest
-from app import app
+
+
+app=flask.Flask(__name__)
 
 
 class TestApi(unittest.TestCase):
@@ -13,11 +16,13 @@ class TestApi(unittest.TestCase):
         self.assertEqual(response.status_code,201)
 
     def test_fetch_users(self):
-        response = self.app.get('/app/api/v1/users')
+        response = self.app.get('/app/api/v1/users',
+                                data = json.loads(self.data))
         self.assertEqual(response.status_code,200)
 
     def test_fetch_user(self):
-        response = self.app.get('/app/api/v1/users/<int:id>')
+        response = self.app.get('/app/api/v1/users/<int:id>',
+                                data = json.loads(self.data))
         self.asssertEqual(response.ststus_code,200)
 
     def test_add_question(self):
@@ -27,15 +32,18 @@ class TestApi(unittest.TestCase):
         self.assertEqual(response.status_code,201)
 
     def test_fetch_questions(self):
-        response = self.app.get('/app/api/v1/questions')
+        response = self.app.get('/app/api/v1/questions',
+                                data = json.loads(self.data))
         self.assertEqual(response.status_code,200)
 
     def test_fetch_question(self):
-        response = self.app.get('/app/api/v1/questions/<int:id>')
+        response = self.app.get('/app/api/v1/questions/<int:id>',
+                                data = json.loads(self.data))
         self.assertEqual(response.status_code,200)
 
     def test_user_questions(self):
-        response = self.app.get('/app/api/v1/users/<int:id>/questions')
+        response = self.app.get('/app/api/v1/users/<int:id>/questions',
+                                data = json.loads(self.data))
         self.assertEqual(response.status_code,200)
 
     def test_add_answer(self):
