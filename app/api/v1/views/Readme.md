@@ -1,1 +1,0 @@
-Stackoverflow-lite is a platform where a user can post a question and be answered by other users.
